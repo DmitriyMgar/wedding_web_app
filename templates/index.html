@@ -10,10 +10,15 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
 
     <!-- favicons -->
-    <link rel="shortcut icon" href="{{ url_for('static', filename= 'images/favicon.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename= 'images/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename= 'images/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename= 'images/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ url_for('static', filename= 'images/site.webmanifest') }}">
+
+    {#<link rel="shortcut icon" href="{{ url_for('static', filename= 'images/favicon.png') }}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename= 'images/apple-touch-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename= 'images/apple-touch-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename= 'images/apple-touch-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename= 'images/apple-touch-icon-114x114.png') }}">#}
 
     <!-- Stylesheets -->
     <!-- bootstrap -->
@@ -31,8 +36,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}" />
     <!-- responsive -->
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/responsive.css') }}" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/BeerSlider.unmin.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/pricingTables.css') }}" />
 
     <!--[if IE]>
             <link rel="stylesheet" href="{{ url_for('static', filename= 'css/ie-custom.css') }}" />
@@ -255,6 +263,20 @@
     </section>
     <!--end portfolio-->
 
+   <!--Before-After Slider-->
+   <section>
+       <div class="container">
+           <div id="slider" class="beer-slider" data-beer-label="before">
+               <img src="{{ url_for('static', filename= 'images/background.jpg') }}" alt="">
+               <div class="beer-reveal" data-beer-label="after">
+                   <img src="{{ url_for('static', filename= 'images/background2.jpg') }}" alt="">
+               </div>
+           </div>
+       </div>
+
+   </section>
+   <!---->
+
     <!-- hightlight section -->
     <section class="bg-fix" style="background-image:url({{ url_for('static', filename= 'images/background.jpg') }});">
         <div class="light-opacity aqua-bg"></div>
@@ -354,19 +376,66 @@
     </section>
     <!-- end instagram section -->
 
+   <!--Pricing Tables-->
+   <section id="pricingTableSection">
+       <div class="container">
+           <div class="pricingTable">
+              <h2 class="pricingTable-title">Выберите Ваш план занятий</h2>
+              <h3 class="pricingTable-subtitle"></h3>
+
+              <ul class="pricingTable-firstTable">
+                <li class="pricingTable-firstTable_table">
+                  <h1 class="pricingTable-firstTable_table__header">Экспресс постановка</h1>
+                  <p class="pricingTable-firstTable_table__pricing"><span></span><span>3 000</span><span>₽</span></p>
+                  <p class="pricingTable-firstTable_table__subpricing"><span>1 500</span><span> ₽ / час</span></p>
+                  <ul class="pricingTable-firstTable_table__options">
+                    <li>2 часа занятий</li>
+                    <li>Консультация</li>
+                    <li>Видео-материал с занятия</li>
+                  </ul>
+                  <div class="pricingTable-firstTable_table__getstart">Заказать</div>
+                </li><li class="pricingTable-firstTable_table">
+                  <h1 class="pricingTable-firstTable_table__header">Стандарт</h1>
+                  <p class="pricingTable-firstTable_table__pricing"><span></span><span>6 000</span><span>₽</span></p>
+                  <p class="pricingTable-firstTable_table__subpricing"><span>1 200</span><span> ₽ / час</span></p>
+                  <ul class="pricingTable-firstTable_table__options">
+                    <li>5 часов занятий</li>
+                    <li>Консультация</li>
+                    <li>Видео-материал с занятий</li>
+                    <li>Выездная репетиция</li>
+                  </ul>
+                  <div class="pricingTable-firstTable_table__getstart">Заказать</div>
+                </li><li class="pricingTable-firstTable_table">
+                  <h1 class="pricingTable-firstTable_table__header">Идеал</h1>
+                  <p class="pricingTable-firstTable_table__pricing"><span></span><span>12 100</span><span>₽</span></p>
+                  <p class="pricingTable-firstTable_table__subpricing"><span>1 100</span><span> ₽ / час</span></p>
+                  <ul class="pricingTable-firstTable_table__options">
+                    <li>11 часов занятий</li>
+                    <li>Консультация</li>
+                    <li>Видео-материал с занятий</li>
+                    <li>Выездная репетиция</li>
+                  </ul>
+                  <div class="pricingTable-firstTable_table__getstart">Заказать</div>
+                </li>
+              </ul>
+            </div>
+       </div>
+   </section>
+   <!---->
+
     <!-- contact us section -->
     <section id="contact" class="xs-section">
         <div class="container">
             <div class="row">
              <!-- section title -->
                 <div class="col-md-12 text-center zero-padding">
-                    <h3 class="section-heading">contact me</h3>
+                    <h3 class="section-heading">Записаться</h3>
                 </div>
              <!-- end section title -->
             </div>
             <div class="row">
                 <div class="col-md-9 text-center center-col">
-                     <h3 class="margin-tp-btm-2 font-weight-500 text-gray contact-text zero-margin-btm">For Booking or Packages<br> Please email us or Call “ Sara “ on<br> <span class="title-sm letter-spacing2 text-gray">+44.233.9128</span> </h3>
+                     <h3 class="margin-tp-btm-2 font-weight-500 text-gray contact-text zero-margin-btm">Для записи на занятия <br> напишите мне или позвоните по номеру<br> <span class="title-sm letter-spacing2 text-gray">+7.900.6257273</span> </h3>
                 </div>
             </div>
             <div class="row margin-tp-btm-2">
@@ -374,10 +443,10 @@
                 <form id="contactusform" action="javascript:void(0)" method="post">
                     <div class="col-md-6 col-sm-12 text-center center-col xs-margin-btm-10">
                         <div id="alert" class="zero-lr-margin"></div>
-                        <input name="name" type="text" placeholder="Name" />
+                        <input name="name" type="text" placeholder="Имя" />
                         <input name="email" type="text" placeholder="Email" />
-                        <textarea name="comment" placeholder="Tell us about your Big Day..."></textarea>
-                        <input id="btn-contact" name="send" type="button" value="send message" class="zero-margin-top no-margin-left-right btn btn-aqua zero-margin-lr">
+                        <textarea name="comment" placeholder="Расскажите о себе..."></textarea>
+                        <input id="btn-contact" name="send" type="button" value="отправить" class="zero-margin-top no-margin-left-right btn btn-aqua zero-margin-lr">
                     </div>
                 </form>
                 <!-- end form -->
@@ -440,6 +509,8 @@
     <script type="text/javascript" src="{{ url_for('static', filename= 'js/imagesloaded.pkgd.min.js') }}"></script>
     <!-- custom main js file -->
     <script type="text/javascript" src="{{ url_for('static', filename= 'js/custom.js') }}"></script>
+
+    <script type="text/javascript" src="{{ url_for('static', filename= 'js/BeerSlider.unmin.js') }}"></script>
 </body>
 
 </html>

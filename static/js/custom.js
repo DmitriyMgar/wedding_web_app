@@ -325,7 +325,9 @@ var hashfilter;
         $(".screen-resize-width").css('min-width', minwidth);
     }
     SetResizeContent();
-    });
 /* -------------------------------------------------------- */
 // Full Screen Header - End
 /* -------------------------------------------------------- */
+
+new BeerSlider(document.getElementById('slider'));
+});

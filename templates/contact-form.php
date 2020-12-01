@@ -7,8 +7,8 @@
 	$comment=$_POST["comment"];
 	
 	// Email Receiver Address
-	$receiver="info@msn.com";
-	$subject="Contact us form details";
+	$receiver="dmitry.mgar@yandex.ru";
+	$subject="Запись на постановку свадебного танца";
 
 	$message = "
 	<html>
