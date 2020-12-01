@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}" />
     <!-- responsive -->
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/responsive.css') }}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
 
     <!--[if IE]>
             <link rel="stylesheet" href="{{ url_for('static', filename= 'css/ie-custom.css') }}" />
@@ -254,13 +256,14 @@
     <!--end portfolio-->
 
     <!-- hightlight section -->
-    <section class="bg-fix" style="background-image:url('http://placehold.it/1920x1200');">
+    <section class="bg-fix" style="background-image:url({{ url_for('static', filename= 'images/background.jpg') }});">
         <div class="light-opacity aqua-bg"></div>
         <div class="container">
             <div class="row position-relative">
                 <div class="col-md-6 col-sm-10 text-center center-col wow fadeIn">
-                    <h1 class="hg-text">Photography is the story<span class="font-w3"><br>I fail to put into words</span></h1>
-                    <a class="btn-white btn med-btn wow fadeInUp internal-link" href="#contact">Get in touch</a>
+                    <p class="hg-text">- Потанцуй со мной</p>
+                    <p class="hg-text"><br>- Здесь?</p>
+                    <a class="btn-white btn med-btn wow fadeInUp internal-link" href="#contact">- Да!</a>
                 </div>
             </div>
         </div>
@@ -329,7 +332,9 @@
             </div>
             <div class="row margin-top-5 sm-text-center xs-center-text">
                 <!-- instagram images -->
-                <div id="owl-insta" class="owl-no-pagination light-pagination xs-margin-top7">
+                <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-9ac508da-a840-4879-a848-e48290a4ac84"></div>
+                {#<div id="owl-insta" class="owl-no-pagination light-pagination xs-margin-top7">
                     <div class="item"><img src="http://placehold.it/800x500" alt="" /></div>
                     <div class="item"><img src="http://placehold.it/800x500" alt="" /></div>
                     <div class="item"><img src="http://placehold.it/800x500" alt="" /></div>
@@ -342,7 +347,7 @@
                     <div class="item"><img src="http://placehold.it/800x500" alt="" /></div>
                     <div class="item"><img src="http://placehold.it/800x500" alt="" /></div>
                     <div class="item"><img src="http://placehold.it/800x500" alt="" /></div>
-                </div>
+                </div>#}
                 <!-- end instagram images -->
             </div>
         </div>

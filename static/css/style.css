@@ -28,7 +28,7 @@
 /* -------------------------------
    02- PreLoader
 ------------------------------- */
-.preloader {position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #00b0b7; z-index: 9999; }
+.preloader {position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: #77a88c; z-index: 9999; }
 .preloader img {display: block; position: absolute; left: 0; right: 0; top: 0; bottom: 0; width: 50px; height: 50px; margin: auto; }
 
 /* -------------------------------
@@ -36,7 +36,7 @@
 ------------------------------- */
 a{ color: #000; }
 a:hover{ color: #5c5c5c;}
-body{ line-height:22px; letter-spacing: 0.02em; font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; font-size:12px; color:#646363;}
+body{ line-height:22px; letter-spacing: 0.02em; font-family: 'PT Serif', serif; -webkit-font-smoothing: antialiased; font-size:12px; color:#646363;}
 input[type="button"], input[type="text"], textarea { -webkit-appearance: none;  border-radius: 0; }
 input:focus, textarea:focus{ border: 1px solid #7bd8dc; border-radius: 5px; }
 img { -webkit-backface-visibility: hidden; height:auto; max-width:100%; }
@@ -70,13 +70,13 @@ section { padding: 130px 0px !important; }
 h1 { font-weight: 700; font-size: 30px; line-height: 39px}
 h2 { font-weight: 400; font-size: 23px; line-height: 29px; letter-spacing:inherit; }
 h3 { font-weight: 700; font-size: 16px; line-height: 29px; letter-spacing:inherit; }
-h4 { font-weight: 300; font-size: 13px; line-height: 27px; letter-spacing: 1.8px; text-transform: none; }
-h5 { font-weight: 600; font-size: 12px; letter-spacing: 1.8px;}
-h6 { font-weight: 400; font-size: 12px; line-height: 19px; letter-spacing: 1.8px;}
+h4 { font-weight: 300; font-size: 13px; line-height: 27px; letter-spacing:inherit; text-transform: none; }
+h5 { font-weight: 600; font-size: 12px; letter-spacing:inherit;}
+h6 { font-weight: 400; font-size: 12px; line-height: 19px; letter-spacing:inherit;}
 h1, h2, h3, h4, h5 { padding: 0px; color: #000; margin: 0px; }
 
 /* Section Heading */
-.section-heading { font-family: 'Ubuntu', sans-serif; font-size: 28px; color: #00b0b7; letter-spacing: 1.2px; padding-bottom: 21px; text-transform: capitalize; font-weight: 700;}
+.section-heading { 'PT Serif', serif; font-size: 28px; color: #77a88c; letter-spacing: 1.2px; padding-bottom: 21px; text-transform: capitalize; font-weight: 700;}
 
 /* Text Transform */
 .text-upper{text-transform: uppercase !important;}
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5 { padding: 0px; color: #000; margin: 0px; }
 /* Different Text Sizes */
 .title-sm{ font-size:20px !important; line-height:30px !important;}
 .contact-text{ line-height:26px !important; text-transform:none !important; }
-.logo-text-color {color: #00b0b7;}
+.logo-text-color {color: #77a88c;}
 .title-big{ font-size:45px !important; letter-spacing: 3px !important; line-height:40px !important;}
 .med-text   { font-size:13px !important; line-height:25px !important; letter-spacing: 1px !important;}
 
@@ -102,7 +102,7 @@ h1, h2, h3, h4, h5 { padding: 0px; color: #000; margin: 0px; }
 .text-gray { color:#7b7b7b !important;}
 .text-black { color: #000 !important;}
 .text-light-gray{color: #c6c6c6 !important;}
-.text-aqua {color: #00b0b7 !important;}
+.text-aqua {color: #77a88c !important;}
 
 /* Letter Spacing */
 .letter-spacing2 { letter-spacing:2px !important; }
@@ -110,10 +110,10 @@ h1, h2, h3, h4, h5 { padding: 0px; color: #000; margin: 0px; }
 /* -------------------------------
    05- Icon Settings
 ------------------------------- */
-i { margin: 0px 4px; color: #00b0b7;}
+i { margin: 0px 4px; color: #77a88c;}
 .icon-lg {font-size:47px !important;}
 .icon-sm {font-size:27px !important;}
-.icon-heart{ font-size:49px; color: #00b0b7;}
+.icon-heart{ font-size:49px; color: #77a88c;}
 
 /* -------------------------------
    06- Background Colors
@@ -142,20 +142,20 @@ i { margin: 0px 4px; color: #00b0b7;}
 ------------------------------- */
 .scrollTop { display: none; font-weight: bold; height: auto; padding: 0; position: fixed; right: 30px; text-align: center; text-decoration: none; top: 91%; width: auto; background-color: #7f817c; z-index: 555; border-radius:50%; }
 .scrollTop i { font-size: 13px; margin: 0px 6px; color: #fff; }
-.scrollTop:hover { background-color: #00b0b7; }
+.scrollTop:hover { background-color: #77a88c; }
 .scrollTop:hover i { position: relative; }
 
 /* -------------------------------
    09- Buttons
 ------------------------------- */
 .btn { display: inline-block; margin:30px 0px 0px 0px !important;}
-.btn.med-btn { font-size: 13px; padding: 9px 27px;}
+.btn.med-btn { font-size: 3.1em; padding: 12px 30px 21px 21px;}
 .btn.btn-transparent { border: 1px solid #fff; background-color:transparent; color: #fff; font-size: 14px; padding: 10px 22px; }
-.btn.btn-transparent:hover {font-size: 14px; padding: 10px 22px; border: 1px solid #00a4aa; background-color: #00b0b7; color: #fff; }
-.btn-white { font-size: 11px; letter-spacing: 1.8px; padding: 6px 23px; color: #00b0b7; background:transparent; border: 1px solid #00b0b7;}
-.btn-white:hover { background:#00b0b7; border: 1px solid #00b0b7; color: #fff; }
-.btn-aqua{ border: 1px solid #00a4aa; color: #fff; display: inline-block; background-color: #00b0b7; padding: 7px 20px 8px; width: auto;}
-.btn-aqua:hover {border: 1px solid #00a4aa; color: #00b0b7; background-color: transparent}
+.btn.btn-transparent:hover {font-size: 14px; padding: 10px 22px; border: 1px solid #669e85; background-color: #77a88c; color: #fff; }
+.btn-white { font-size: 11px; letter-spacing: 1.8px; padding: 6px 23px; color: #77a88c; background:transparent; border: 1px solid #77a88c;}
+.btn-white:hover { background:#77a88c; border: 1px solid #77a88c; color: #fff; }
+.btn-aqua{ border: 1px solid #669e85; color: #fff; display: inline-block; background-color: #77a88c; padding: 7px 20px 8px; width: auto;}
+.btn-aqua:hover {border: 1px solid #669e85; color: #77a88c; background-color: transparent}
 
 /* -------------------------------
    10- Navigation
@@ -174,10 +174,10 @@ nav .container{ height: 80px; display: table-cell; vertical-align: middle; posit
 .fix-nav.nav-border-bottom { border-bottom: 1px solid rgba(0,0,0,0)}
 .shrink-nav.nav-border-bottom { border-bottom: 1px solid rgba(0,0,0,0.1)}
 .navbar-default .navbar-nav > li > a{ color:#fff !important; }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {border-bottom:2px solid #00b0b7 !important}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {border-bottom:2px solid #77a88c !important}
 .shrink-nav .navbar-nav > li > a{ color:#878686 !important; }
-.nav-tabs > li.active > a{ border-bottom: 1px solid #00b0b7 !important; color: #00b0b7 !important;}
-.nav-tabs > li > a:hover{ border-bottom: 1px solid #00b0b7 !important;  color: #00b0b7 !important;}
+.nav-tabs > li.active > a{ border-bottom: 1px solid #77a88c !important; color: #77a88c !important;}
+.nav-tabs > li > a:hover{ border-bottom: 1px solid #77a88c !important;  color: #77a88c !important;}
 
 /* -------------------------------
    11- Parallax Settings
@@ -228,7 +228,7 @@ figure:hover img { -ms-transform: scale(1.02,1.02); -webkit-transform: scale(1.0
 .icons-footer a { margin: 0px 13px;}
 .icons-footer i {  font-size: 22px;}
 .icons-footer a i {color: #9a9999; top: 0px;  position: relative; }
-.icons-footer a:hover i { color:#00b0b7 !important; top: -2px; }
+.icons-footer a:hover i { color:#77a88c !important; top: -2px; }
 .footer-btm { position: relative; top:1px}
 footer { clear:both; background: #fff}
 
@@ -270,7 +270,7 @@ footer { clear:both; background: #fff}
 .center-col{ float:none !important; margin-left:auto !important; margin-right:auto !important}
 
 /* Hightlight Section Text */
-.hg-text {font-family: 'Ubuntu', sans-serif; color: #00b0b7 !important; font-weight: 800; text-transform: none !important;}
+.hg-text {font-family: 'PT Serif', serif; color: #77a88c !important; font-weight: 800; text-transform: none !important; font-size: 3.2em;}
 
 /* alert */
 #alert { border: none; clear: both; background-color: #003d63; text-align: center; margin: 0 13px 23px;  padding-top: 17px; padding-bottom: 18px; color: #fff; }
