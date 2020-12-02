@@ -329,5 +329,5 @@ var hashfilter;
 // Full Screen Header - End
 /* -------------------------------------------------------- */
 
-new BeerSlider(document.getElementById('slider'));
+new BeerSlider(document.getElementById('slider'), {start: 75});
 });

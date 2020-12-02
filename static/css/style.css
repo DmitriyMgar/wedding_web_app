@@ -289,3 +289,9 @@ footer { clear:both; background: #fff}
 @media screen and (-webkit-min-device-pixel-ratio:0) { 
   nav * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
 }
+
+.beer-slider {
+  max-width: calc(25% - 12px);
+    margin-left: 0;
+    margin-right: 0;
+}

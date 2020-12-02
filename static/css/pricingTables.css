@@ -282,7 +282,7 @@
   display: inline-block;
   margin-right: 15px;
   color: white;
-  background-color: #74ce6a;
+  background-color: #77a88c;
   border-radius: 50%;
   width: 15px;
   height: 15px;
@@ -305,12 +305,12 @@
 }
 .pricingTable-firstTable_table__getstart {
   color: white;
-  background-color: #71ce73;
+  background-color: #77a88c;
   margin-top: 30px;
   border-radius: 5px;
   cursor: pointer;
   padding: 15px;
-  box-shadow: 0px 3px 0px 0px #66ac64;
+  box-shadow: 0px 3px 0px 0px #669e85;
   letter-spacing: 0.07em;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
